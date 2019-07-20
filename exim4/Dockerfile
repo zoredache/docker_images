@@ -1,9 +1,12 @@
-# inspired from https://github.com/tianon/dockerfiles/blob/master/exim4/Dockerfile
+# inspired from https://github.com/tianon/dockerfiles/tree/master/exim4
 
 FROM debian:buster-slim
 
 RUN set -eux; \
   apt-get update; \
+  adduser \
+    --system --group --quiet --home /var/spool/exim4 --uid 110 \
+    --no-create-home --disabled-login --force-badname Debian-exim ; \
   </dev/null DEBIAN_FRONTEND=noninteractive \
   apt-get install --yes --no-install-recommends \
     tini exim4-daemon-light; \
