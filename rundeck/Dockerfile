@@ -14,3 +14,5 @@ RUN sudo sh -c 'apt-get update && \
                 apt-get install --yes sshpass && \
                 rm -rf /var/lib/apt/lists/*'
 
+RUN wget -N -O ~/rundeck-cli-all.jar https://github.com/rundeck/rundeck-cli/releases/download/v1.1.7/rundeck-cli-1.1.7-all.jar 
+
