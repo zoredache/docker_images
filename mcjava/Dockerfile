@@ -17,5 +17,6 @@ EXPOSE 25577/udp
 EXPOSE 8804/tcp
 WORKDIR /srv/project/
 CMD ["/usr/bin/tmux", "new-session", "-s", "mc", "/bin/bash"]
+
 USER 1000
 
