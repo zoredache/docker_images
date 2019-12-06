@@ -1,4 +1,4 @@
-FROM rundeck/rundeck:3.1.2
+FROM rundeck/rundeck:3.1.3
 
 LABEL maintainer="zoredache@gmail.com"
 
