@@ -1,4 +1,4 @@
-FROM rundeck/rundeck:3.1.2
+FROM docker.io/rundeck/rundeck:3.2.2
 
 LABEL maintainer="zoredache@gmail.com"
 

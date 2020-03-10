@@ -5,8 +5,10 @@ cryptography
 dnspython
 docker
 netaddr
+ntlm-auth
 pykerberos
 pyOpenSSL
+pypsrp
 pywinrm
 requests-credssp
 requests-kerberos
