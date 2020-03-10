@@ -1,4 +1,4 @@
-FROM openjdk:11-slim-buster
+FROM docker.io/library/openjdk:11-slim-buster
 
 LABEL maintainer="zoredache@gmail.com"
 
